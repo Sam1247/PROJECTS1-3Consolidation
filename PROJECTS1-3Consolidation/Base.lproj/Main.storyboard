@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0IK-Wq-y0P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Swl-ND-myD">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,6 +39,35 @@
             </objects>
             <point key="canvasLocation" x="932" y="46.551724137931039"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Sex-ek-eEN">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="jj7-zs-ybP" customClass="DetailViewController" customModule="PROJECTS1_3Consolidation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QPc-Yl-Ey5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ix6-9T-ok5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ix6-9T-ok5" firstAttribute="top" secondItem="QPc-Yl-Ey5" secondAttribute="top" id="BhO-EH-EwL"/>
+                            <constraint firstAttribute="bottom" secondItem="Ix6-9T-ok5" secondAttribute="bottom" id="Lyl-fu-OlH"/>
+                            <constraint firstAttribute="trailing" secondItem="Ix6-9T-ok5" secondAttribute="trailing" id="Zin-BU-8bA"/>
+                            <constraint firstItem="Ix6-9T-ok5" firstAttribute="leading" secondItem="QPc-Yl-Ey5" secondAttribute="leading" id="blF-SR-35v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Th-ZF-4be"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ix6-9T-ok5" id="EHh-ce-80k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ux3-JD-HQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784.8" y="46.551724137931039"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bCT-ka-Iv0">
             <objects>
@@ -54,7 +84,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="633-H3-Bsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-68" y="59"/>
+            <point key="canvasLocation" x="14" y="47"/>
         </scene>
     </scenes>
 </document>

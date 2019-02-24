@@ -48,6 +48,7 @@
 		20A66A742222FB8C00D9D5B4 /* ireland.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A66A502222FB8C00D9D5B4 /* ireland.png */; };
 		20A66A752222FB8C00D9D5B4 /* us@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A66A512222FB8C00D9D5B4 /* us@2x.png */; };
 		20A66A762222FB8C00D9D5B4 /* uk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A66A522222FB8C00D9D5B4 /* uk@2x.png */; };
+		20A66A7A2223024000D9D5B4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A66A792223024000D9D5B4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		20A66A502222FB8C00D9D5B4 /* ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ireland.png; sourceTree = "<group>"; };
 		20A66A512222FB8C00D9D5B4 /* us@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "us@2x.png"; sourceTree = "<group>"; };
 		20A66A522222FB8C00D9D5B4 /* uk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uk@2x.png"; sourceTree = "<group>"; };
+		20A66A792223024000D9D5B4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				20A669D42222F7AC00D9D5B4 /* AppDelegate.swift */,
 				20A669D62222F7AC00D9D5B4 /* ViewController.swift */,
+				20A66A792223024000D9D5B4 /* DetailViewController.swift */,
 				20A669D82222F7AC00D9D5B4 /* Main.storyboard */,
 				20A669DB2222F7AE00D9D5B4 /* Assets.xcassets */,
 				20A669DD2222F7AE00D9D5B4 /* LaunchScreen.storyboard */,
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A66A7A2223024000D9D5B4 /* DetailViewController.swift in Sources */,
 				20A669D72222F7AC00D9D5B4 /* ViewController.swift in Sources */,
 				20A669D52222F7AC00D9D5B4 /* AppDelegate.swift in Sources */,
 			);

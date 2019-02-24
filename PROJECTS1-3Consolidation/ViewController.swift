@@ -16,7 +16,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        title = "Storm Viewer"
+        title = "Flag Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let fm = FileManager.default
@@ -42,6 +42,12 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            vc.selectedImage = pictures[indexPath.row]
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
    
 }
 
